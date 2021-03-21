@@ -19,7 +19,7 @@ const Cart = () => {
       if (data) {
         stripePromise.then((res) => {
           res.redirectToCheckout({ sessionId: data.checkout.session });
-        });
+        })
       }
     }, [data]);
 
